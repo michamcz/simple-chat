@@ -1,0 +1,21 @@
+extends layout
+
+block header
+    header
+        p.boldLeft CHAT V0.1
+        a(href='/')
+            button.headerButton HOME
+
+block content
+    div.welcome
+      p.bold SING UP
+      
+      form(action="/registration", method="POST")
+        p
+          input.logInput(name="login", type="text", placeholder="login", required="required", maxlength="20")
+          input.logInput(name="password", type="password", placeholder="password", required="required", maxlength="20")
+          input.logInput(name="repeat", type="password", placeholder="repeat password", required="required", maxlength="20")
+        p
+          button.logButton(type="submit") Create account
+         
+        p #{message}

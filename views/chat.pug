@@ -1,0 +1,40 @@
+extends layout
+
+block header
+    header
+        p.boldLeft CHAT V0.1
+        a(href='/' + owner + '/list')
+            button.headerButton Your Friends
+        a(href='/' + owner + '/profile')
+            button.userNameButton 
+                div.userNameText= owner
+                div.userImage
+        a(href= '/' + owner + '/logout')
+            button.headerButton Log Out
+block content
+    div.chatAll
+        p.bar= recipient
+        div.chat
+            - var previous = 'admin';
+            each one in final
+                if(one.author == owner)
+                    div.sender
+                        if(one.author != previous)
+                            p.senderHeader= one.author
+                        p.senderMessage= one.message 
+                else if(one.author == recipient) 
+                    div.recipient
+                        if(one.author != previous)
+                            p.recipientHeader= one.author
+                        p.recipientMessage= one.message
+                else 
+                    div.other1
+                        p.other2= one.message
+                - previous = one.author;
+        form(method='POST')
+            textarea.inputArea(name="wiadomosc", placeholder="enter the message...", required="required")
+            button.sendButton(type="submit") Send a message
+
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+        script(src="/js/socket.io.js")
+        script(src="/js/chatIo.js")

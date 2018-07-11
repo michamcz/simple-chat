@@ -1,0 +1,37 @@
+extends layout
+block header
+    header
+        p.boldLeft CHAT V0.1
+        a(href='/' + owner + '/list')
+            button.headerButton Your Friends
+        a(href='/' + owner + '/profile')
+            button.userNameButton 
+                div.userNameText= owner
+                div.userImage
+        a(href= '/' + owner + '/logout')
+            button.headerButton Log Out
+block content
+    div.myFriends 
+        p.bold FRIENDS LIST
+        div.myFriends2
+            -  for(var user of friendsList) {
+                    a(href =  '/' + owner + "/chat/" + user )
+                      button.logButton #{user}
+            - }
+    
+
+    div.userList
+        p.bold ADD NEW FRIENDS
+        div.userList2     
+            - for(var user of usersList) {
+                -if(!friendsList.includes(user.login))
+                    a(href =  '/' + owner + "/chat/" + user.login )
+                        button.logButton #{user.login}
+                    a(href = '/' + owner + '/add/' + user.login) 
+                        button.addButton(id = user.login) +
+            - }
+            
+
+    
+
+    

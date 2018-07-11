@@ -1,0 +1,20 @@
+extends layout
+
+block header
+    header
+        p.boldLeft CHAT V0.1
+        a(href='/')
+            button.headerButton HOME
+
+block content
+    div.welcome
+      p SING IN
+      form(action="/login", method="POST")
+        p
+          input.logInput(name="login", type="text", placeholder="login", required="required", maxlength="20")
+          input.logInput(name="password", type="password", placeholder="password", required="required", maxlength="20")
+        p
+          button.logButton(type="submit") Sing in
+        
+        p 
+          a #{message}

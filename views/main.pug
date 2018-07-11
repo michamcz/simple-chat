@@ -1,0 +1,16 @@
+extends layout
+
+block header
+    header
+        p.boldLeft CHAT V0.1
+        a(href='/')
+            button.headerButton HOME
+
+block content
+   div.welcome
+      p.bold Welcome to my Chat!!!
+      a(href="/login")
+         button.logButton(type="button") Sing in
+      br      
+      a(href="/registration") 
+         button.logButton(type="button") Sing up

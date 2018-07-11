@@ -1,0 +1,13 @@
+extends layout
+
+block header
+    header
+        p.boldLeft CZAT V0.1
+        a(href='/')
+            button.headerButton HOME
+
+block content
+    div.welcome
+      p.bold= 'Coś poszło nie tak'
+      a(href="/")
+         button.logButton(type="button") Strona główna

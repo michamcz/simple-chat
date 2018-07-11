@@ -1,0 +1,386 @@
+body {
+    background-color: grey;
+    font-family: Tahoma;
+    margin:0px;
+    text-align:center;
+}
+
+form {
+    max-width: 650px;
+    word-wrap: break-word;
+}
+
+.chat {
+    overflow:auto;
+    background: white;
+    height: 300px; 
+    width: 400px;
+}
+
+.recipientMessage {
+    
+    display: inline-block;
+    border-radius: 5px;
+    background: lightgray;
+    padding: 7px; 
+    text-align:left;
+    margin:0px;
+    margin-left:5px;
+    margin-bottom:2px;
+    max-width: 350px;
+    word-wrap: break-word;
+    font-size: 28px;
+}
+
+.recipientHeader {
+    text-align:left;
+    color:grey;
+    margin-bottom:0px;
+    margin-top:5px;
+    padding-left:0px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.recipient {
+    text-align: left;
+}
+
+.senderMessage {
+    display: inline-block;
+    border-radius: 5px;
+    background: rgba(31, 180, 206);
+    padding: 7px; 
+    margin:0px;
+    margin-right:5px;
+    margin-bottom:2px;
+    text-align: left;
+    max-width: 400px;
+    word-wrap: break-word;
+    font-size: 28px;
+}
+
+.senderHeader {
+    text-align: right;
+    color:grey;
+    margin-bottom:0px;
+    margin-top:5px;
+    padding-right:5px;
+    font-size: 20px;
+}
+
+.sender {
+    text-align: right;
+}
+
+.other1 {
+    text-align: center;
+    
+}
+
+.boldLeft{
+    text-align:left;
+}
+
+.other2 {
+    display: inline-block;
+    border-radius: 5px;
+    background: rgba(31, 180, 206);
+    padding: 7px; 
+    text-align:center;
+    margin:0px;
+    margin-left:5px;
+    margin-bottom:2px;
+    font-size: 28px;
+}
+
+.bar {
+    width: 650px;
+    font-size:30px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgba(31, 180, 206);
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    text-align:center;
+    border: solid 1px lightgray;
+}
+
+.chat {
+    width: 660px;
+    height: 500px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    border: solid 1px lightgray;
+    
+}
+
+.inputArea {
+    width: 650px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    padding: 5px;
+    resize: none;
+    border: solid 1px lightgray;
+    font-size:25px;
+}
+
+.sendButton {
+    width: 662px;
+    border-radius: 0px 0px 5px 5px;
+    background: lightgray;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    border: solid 1px lightgray;
+    font-family: Tahoma;
+    font-size:25px;
+}
+
+header {
+    background-color: rgba(31, 180, 206);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    margin-bottom:50px;
+    text-align:right;
+}
+
+footer {
+    background-color: rgba(31, 180, 206);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    margin-top:60px;
+    text-align: left
+}
+
+.welcome {
+    display: inline-block;
+    margin: 70px;
+    margin-bottom:150px;
+    padding:50px;
+    font-size: 33px;
+    text-align:center;
+    width:400px;
+    min-height:500px;
+    max-height:550px;
+    background-color:rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+}
+
+
+
+.logInput {
+    width: 200px;
+    border-radius: 5px 5px 5px 5px;
+    background: lightgray;
+    padding: 10px;
+    margin:10px;
+    font-size:22px;
+    font-family: Tahoma;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+}
+
+.logButton {
+    width: 200px;
+    border-radius: 5px 5px 5px 5px;
+    background: lightgray;
+    padding: 10px;
+    margin:10px;
+    font-size:22px;
+    font-family: Tahoma;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+    overflow: hidden;
+    height:52px;
+    margin-right:0px;
+}
+
+.logButton:hover, .sendButton:hover {
+    background: rgba(248, 248, 248, 0.966);
+    border-color: rgba(248, 248, 248, 0.966);
+}
+
+a:link {
+    text-decoration: none;
+}
+.chatAll {
+    display: inline-block;
+    margin:50px;
+    padding:50px;
+    text-align:center;
+    max-width:800px;
+    min-height:500px;
+    background-color:rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+}
+
+.headerButton {
+    font-size:30px;
+    font-family:Tahoma;
+    padding:20px;
+    background-color: rgba(31, 180, 206);
+    border-left:solid 2px rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+}
+
+.headerButton:hover {
+    background-color: rgb(82, 216, 240);
+} 
+
+.footerButton {
+    font-size:20px;
+    font-family:Tahoma;
+    padding:10px;
+    background-color: rgba(31, 180, 206);
+    border-left:solid 2px rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+}
+
+.footerButton:hover {
+    background-color: rgb(82, 216, 240);
+}
+
+.footerText {
+    text-shadow: 5px 5px 10px rgb(29, 28, 28);
+    font-size:20px;
+    padding:20px;
+}
+
+.userImage {
+    text-align:right;
+    width:60px;
+    height: 58px;
+    background-size: 60px, 60px; 
+    background-image: url('https://image.freepik.com/free-icon/male-user-shadow_318-34042.jpg');
+    margin:10px;
+    margin-top:0px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+.userNameText {
+    display: inline-block;
+}
+
+.userNameButton {
+    font-size:30px;
+    font-family:Tahoma;
+    background-color: rgba(31, 180, 206);
+    border-left:solid 2px rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    height: 78px;
+    line-height: 78px;
+}
+
+
+.userNameButton:hover {
+    background-color: rgb(82, 216, 240);
+}
+
+.addButton {
+    width: 52px;
+    height: 52px;
+    border-radius: 5px 5px 5px 5px;
+    background: lightgray;
+    padding: 10px;
+    margin:10px;
+    font-size:22px;
+    font-family: Tahoma;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+    overflow: hidden; 
+    margin-left:0px;
+}
+
+.myFriends {
+    display: inline-block;
+    margin-top:50px;
+    margin-bottom:90px;
+    margin-left:20px;
+    margin-right: 50px;
+    padding-bottom:20px;
+    font-size: 33px;
+    text-align:center;
+    min-width:500px;
+    max-width:500px;
+    max-height:600px;
+    min-height:600px;
+    background-color:rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+}
+
+.userList {
+    display: inline-block;
+    margin-top:50px;
+    margin-bottom:90px;
+    margin-left:20px;
+    margin-right: 50px;
+    padding-bottom:20px;
+    font-size: 33px;
+    text-align:center;
+    max-width:400px;
+    min-width:400px;
+    max-height:500px;
+    min-height:500px;
+    background-color:rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+}
+
+.profile {
+    
+    float:left;
+    margin-top:50px;
+    margin-bottom:90px;
+    margin-left:300px;
+    margin-right: 50px;
+    padding-bottom:20px;
+    font-size: 33px;
+    text-align:center;
+    max-width:500px;
+    min-width:500px;
+    max-height:600px;
+    min-height:600px;
+    background-color:rgb(88, 86, 86);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgb(29, 28, 28);
+}
+
+.userList2 {
+    overflow:auto;
+    max-width:400px;
+    min-width:400px;
+    max-height:400px;
+    min-height:400px;
+}
+
+.myFriends2 {
+    overflow:auto;
+    max-width:500px;
+    min-width:500px;
+    max-height:500px;
+    min-height:500px;
+}
+
+.boldLeft {
+    padding-left:20px;
+    float:left;
+    font-size:30px;
+    font-family:Tahoma;
+}

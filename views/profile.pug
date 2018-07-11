@@ -1,0 +1,36 @@
+extends layout
+
+block header
+    header
+        p.boldLeft CHAT V0.1
+        a(href='/' + owner + '/list')
+            button.headerButton Your Friends
+        a(href='/' + owner + '/profile')
+            button.userNameButton 
+                div.userNameText= owner
+                div.userImage
+        a(href= '/' + owner + '/logout')
+            button.headerButton Log Out
+
+block content
+    div.profile
+        p.bold YOUR PROFILE
+        div.boldLeft
+            p nickname: #{owner}
+            p registered: #{time}
+        
+    
+
+    div.welcome
+      p.bold CHANGE YOUR PASSWORD
+      
+      form(method="POST")
+        p
+          input.logInput(name="current", type="text", placeholder="current password", required="required", maxlength="20")
+          input.logInput(name="password", type="password", placeholder="new password", required="required", maxlength="20")
+          input.logInput(name="repeat", type="password", placeholder="repeat password", required="required", maxlength="20")
+        p
+          button.logButton(type="submit") Change password
+         
+        p #{message}
+        
